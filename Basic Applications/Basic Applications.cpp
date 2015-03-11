@@ -27,21 +27,11 @@ int main(int argc, _TCHAR* argv[])
 	std::cout << "It's nice to meet you " << nameInput << std::endl;
 	*/
 
-	MyLinkedList<std::string> testList = MyLinkedList<std::string>();
-
-	std::cout << "Please keep entering names to store away in the linked list. Enter <stop> to end." << std::endl;
-	std::string nameInput = "";
-	std::cin >> nameInput;
-	while (nameInput != "stop")
-	{
-		testList.push_back(nameInput);
-		std::cin >> nameInput;
-		std::cin.get();
-	}
-
-	testList.display();
-
+	
+	//testLinkedList();	//tests the linked list. Function is in MyLinkedList.h
 	//findBestHand(5); //test the PokerDeck Class.
+	//chapter14_1();
+	chapter14_2();
 
 	std::cin.get();
 	return 0;

@@ -201,3 +201,19 @@ template<typename T>
 typename MyLinkedList<T>::Node* MyLinkedList<T>::search(T data){
 	return NULL;
 }
+
+void testLinkedList(){
+	MyLinkedList<std::string> testList = MyLinkedList<std::string>();
+
+	std::cout << "Please keep entering names to store away in the linked list. Enter <stop> to end." << std::endl;
+	std::string nameInput = "";
+	std::cin >> nameInput;
+	while (nameInput != "stop")
+	{
+		testList.push_back(nameInput);
+		std::cin >> nameInput;
+		std::cin.get();
+	}
+
+	testList.display();
+}

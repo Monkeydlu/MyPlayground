@@ -48,3 +48,26 @@ void chapter14_1(){
 	}
 	std::cout << "}";
 }
+
+void CountOccurrences(std::string inputString){
+	std::sort(inputString.begin(), inputString.end());
+
+	int count = 1;
+	for (unsigned int i = 1; i < inputString.size(); i++){
+		if (inputString[i] == inputString[i-1]){
+			count++;
+		}else{
+			std::cout << "(" << inputString[i - 1] << ", " << count << "),";
+			count = 1;
+		}
+	}
+	std::cout << "(" << inputString[inputString.size() - 1] << ", " << count << ")" << std::endl;
+}
+
+void chapter14_2(){
+	std::cout << "Please enter a string of characters, this will count the occurance of each character." << std::endl;
+	std::string inputString = "";
+	std::cin >> inputString;
+	std::cin.get();
+	CountOccurrences(inputString);
+}

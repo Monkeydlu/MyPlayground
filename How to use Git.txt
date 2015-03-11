@@ -1,0 +1,16 @@
+git add -A // for staging all files thats been changed. 
+git commit -m "comment"
+git push origin <branch name>
+
+gitk //displays past changes to branch
+
+git pull origin <branch name>
+
+git branch -a //list all branches
+git checkout <branch name> 
+git checkout -b <new branch name>
+
+git branch -d <branch name>	//deleting a branch
+git push origin :<branch name> //push the delete
+
+git checkout . //kill all changes since last commit
