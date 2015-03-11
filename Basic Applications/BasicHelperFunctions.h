@@ -28,6 +28,20 @@ float convertStringToFloat(std::string parseThis){
 	return value;
 }
 
+void quickForLoops(){
+	/*
+	you can quickly look through all thing things of some container
+	in a for loop using the:
+	for (<typename> i : container){}
+	pattern. 
+	Likewise, you could automatically set the <typename> using
+	for (auto& i : container){}
+	when the container could contain any sort of data type (such as a map or vector)
+	Specifically for Maps, this the only way to do so, as each object in a map is a key value pair struct.
+	(you can then access them using i.first and i.second)
+	*/
+}
+
 template<typename T>
 T myFunction(T parameter){
 	return parameter;

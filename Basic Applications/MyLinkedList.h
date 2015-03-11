@@ -203,7 +203,7 @@ typename MyLinkedList<T>::Node* MyLinkedList<T>::search(T data){
 }
 
 void testLinkedList(){
-	MyLinkedList<std::string> testList = MyLinkedList<std::string>();
+	MyLinkedList<std::string> testList;
 
 	std::cout << "Please keep entering names to store away in the linked list. Enter <stop> to end." << std::endl;
 	std::string nameInput = "";

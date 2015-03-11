@@ -3,6 +3,9 @@
 #include <string>
 #include <math.h>
 #include <algorithm>
+#include <map>
+
+#include "MyLinkedList.h"
 
 /*
 This file currently includes:
@@ -70,4 +73,13 @@ void chapter14_2(){
 	std::cin >> inputString;
 	std::cin.get();
 	CountOccurrences(inputString);
+}
+
+void bucketSort(std::string inputString){
+	MyLinkedList<char> buckets[26];
+	buckets[2].push_back['a'];
+
+	std::map<char, int> occuranceMap;
+	occuranceMap['a'] = 10;
+
 }
