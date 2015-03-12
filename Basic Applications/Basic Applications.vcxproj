@@ -81,6 +81,7 @@
   <ItemGroup>
     <ClInclude Include="BasicHelperFunctions.h" />
     <ClInclude Include="Chapter_14.h" />
+    <ClInclude Include="Chapter_6.h" />
     <ClInclude Include="MySortFunctions.h" />
     <ClInclude Include="MyLinkedList.h" />
     <ClInclude Include="PokerDeck.h" />

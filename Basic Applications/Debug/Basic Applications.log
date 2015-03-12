@@ -1,15 +1,82 @@
-﻿Build started 3/11/2015 2:41:56 AM.
+﻿Build started 3/11/2015 1:38:10 PM.
      1>Project "C:\Users\Monkeydlu\Desktop\MyPlayground\Basic Applications\Basic Applications.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Basic Applications.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Basic Applications.cpp"
          Basic Applications.cpp
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(39): error C2953: 'MyLinkedList' : class template has already been defined
+                 c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(7) : see declaration of 'MyLinkedList'
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(50): error C2244: 'MyLinkedList<T>::~MyLinkedList' : unable to match function definition to an existing declaration
+                 c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(25) : see declaration of 'MyLinkedList<T>::~MyLinkedList'
+                 definition
+                 'MyLinkedList::~MyLinkedList(void)'
+                 existing declarations
+                 'MyLinkedList<T>::~MyLinkedList(void)'
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(91): error C2244: 'MyLinkedList<T>::insert' : unable to match function definition to an existing declaration
+                 c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(26) : see declaration of 'MyLinkedList<T>::insert'
+                 definition
+                 'void MyLinkedList::insert(MyLinkedList<T>::Node *,T)'
+                 existing declarations
+                 'void MyLinkedList<T>::insert(MyLinkedList<T>::Node *,T)'
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(108): error C2244: 'MyLinkedList<T>::push_back' : unable to match function definition to an existing declaration
+                 c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(27) : see declaration of 'MyLinkedList<T>::push_back'
+                 definition
+                 'void MyLinkedList::push_back(T)'
+                 existing declarations
+                 'void MyLinkedList<T>::push_back(T)'
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(125): error C2244: 'MyLinkedList<T>::push_front' : unable to match function definition to an existing declaration
+                 c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(28) : see declaration of 'MyLinkedList<T>::push_front'
+                 definition
+                 'void MyLinkedList::push_front(T)'
+                 existing declarations
+                 'void MyLinkedList<T>::push_front(T)'
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(137): error C2244: 'MyLinkedList<T>::pop_back' : unable to match function definition to an existing declaration
+                 c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(29) : see declaration of 'MyLinkedList<T>::pop_back'
+                 definition
+                 'T MyLinkedList::pop_back(void)'
+                 existing declarations
+                 'T MyLinkedList<T>::pop_back(void)'
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(149): error C2244: 'MyLinkedList<T>::pop_front' : unable to match function definition to an existing declaration
+                 c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(30) : see declaration of 'MyLinkedList<T>::pop_front'
+                 definition
+                 'T MyLinkedList::pop_front(void)'
+                 existing declarations
+                 'T MyLinkedList<T>::pop_front(void)'
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(186): error C2244: 'MyLinkedList<T>::erase' : unable to match function definition to an existing declaration
+                 c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(31) : see declaration of 'MyLinkedList<T>::erase'
+                 definition
+                 'void MyLinkedList::erase(MyLinkedList<T>::Node *)'
+                 existing declarations
+                 'void MyLinkedList<T>::erase(MyLinkedList<T>::Node *)'
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(197): error C2244: 'MyLinkedList<T>::display' : unable to match function definition to an existing declaration
+                 c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(32) : see declaration of 'MyLinkedList<T>::display'
+                 definition
+                 'void MyLinkedList::display(void)'
+                 existing declarations
+                 'void MyLinkedList<T>::display(void)'
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(203): error C2244: 'MyLinkedList<T>::search' : unable to match function definition to an existing declaration
+                 c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(33) : see declaration of 'MyLinkedList<T>::search'
+                 definition
+                 'MyLinkedList<T>::Node *MyLinkedList::search(T)'
+                 existing declarations
+                 'MyLinkedList<T>::Node *MyLinkedList<T>::search(T)'
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(205): error C2084: function 'void testLinkedList(void)' already has a body
+                 c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(205) : see previous definition of 'testLinkedList'
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(206): error C2133: 'testList' : unknown size
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(206): error C2512: 'MyLinkedList' : no appropriate default constructor available
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(213): error C2662: 'void MyLinkedList<T>::push_back(T)' : cannot convert 'this' pointer from 'MyLinkedList' to 'MyLinkedList<T> &'
+                 Reason: cannot convert from 'MyLinkedList' to 'MyLinkedList<T>'
+                 Conversion requires a second user-defined-conversion operator or constructor
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\mylinkedlist.h(218): error C2662: 'void MyLinkedList<T>::display(void)' : cannot convert 'this' pointer from 'MyLinkedList' to 'MyLinkedList<T> &'
+                 Reason: cannot convert from 'MyLinkedList' to 'MyLinkedList<T>'
+                 Conversion requires a second user-defined-conversion operator or constructor
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\chapter_14.h(79): error C2148: total size of array must not exceed 0x7fffffff bytes
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\chapter_14.h(79): error C2512: 'MyLinkedList' : no appropriate default constructor available
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\chapter_14.h(80): error C2036: 'MyLinkedList *' : unknown size
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\chapter_14.h(80): error C3867: 'MyLinkedList<T>::push_back': function call missing argument list; use '&MyLinkedList<T>::push_back' to create a pointer to member
+     1>c:\users\monkeydlu\desktop\myplayground\basic applications\chapter_14.h(80): error C2109: subscript requires array or pointer type
      1>c:\users\monkeydlu\desktop\myplayground\basic applications\basichelperfunctions.h(27): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-       Link:
-         C:\Program Files (x86)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Monkeydlu\Desktop\MyPlayground\Basic Applications\Debug\Basic Applications.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Monkeydlu\Desktop\MyPlayground\Basic Applications\Debug\Basic Applications.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Monkeydlu\Desktop\MyPlayground\Basic Applications\Debug\Basic Applications.lib" /MACHINE:X86 "Debug\Basic Applications.obj"
-         Debug\stdafx.obj
-         Basic Applications.vcxproj -> C:\Users\Monkeydlu\Desktop\MyPlayground\Basic Applications\Debug\Basic Applications.exe
-     1>Done Building Project "C:\Users\Monkeydlu\Desktop\MyPlayground\Basic Applications\Basic Applications.vcxproj" (Build target(s)).
+     1>Done Building Project "C:\Users\Monkeydlu\Desktop\MyPlayground\Basic Applications\Basic Applications.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.02
+Time Elapsed 00:00:00.99
